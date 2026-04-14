@@ -1,0 +1,7 @@
+streamlit>=1.0
+chromadb
+sentence-transformers
+torch
+transformers
+bitsandbytes>=0.46.1
+sentencepiece
