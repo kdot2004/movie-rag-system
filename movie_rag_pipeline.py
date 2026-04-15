@@ -261,10 +261,10 @@ def rag_pipeline(query, collection, embedding_model, model, tokenizer, top_k = 3
   """
 
   # Retrieve the context documents
-  context, context_ids = retrieve_documents(query, collection, embedding_model, top_k = top_k)
+  context = retrieve_documents(query, collection, embedding_model, top_k = top_k)
   
   # Generate the answer with the retrieved context
-  answer = generate_answer(query, context, context_ids, model, tokenizer)
+  answer = generate_answer(query, context, model, tokenizer)
 
   return answer
 
