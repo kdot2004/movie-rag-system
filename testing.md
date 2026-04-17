@@ -57,6 +57,13 @@ with Rue from District 11 and another tribute, but they face numerous challenges
 and competitors, including Cato, a tribute from District 2. Katniss and Peeta
 manage to survive, with
 
+**Evaluation:**
+- Precision@5: 0.8
+- Recall@5: 0.67
+- Latency: 32.77 
+- Notes: Long summary, a lot of detail provided. However runs into cutoff.
+
+
 # 2. What happens at the end of Jaws: The Revenge?
 
 **Retrieved Documents:**
@@ -111,6 +118,12 @@ At the end of Jaws: The Revenge, the shark is destroyed when it is hit by an
 explosion caused by an electrical impulse-powered explosive. The survivors,
 which include Michael, Jake, and Ellen, make it back to land. Hoagie flies Ellen
 back to Amity Island, concluding the film.
+
+**Evaluation:**
+- Precision@5: 0.4
+- Recall@5: 0.5
+- Latency: 9.34 
+- Notes: Short summary 
 
 # 3. What is Fletcher Reede’s main problem in Liar Liar?
 
@@ -174,6 +187,12 @@ situation causes numerous inconveniences for him, particularly as he is in the
 middle of a high-stakes court case. His inability to lie affects his career,
 personal relationships, and his ability to connect with his son.
 
+**Evaluation:**
+- Precision@5: 0.6
+- Recall@5: 1.0
+- Latency: 10.67 
+- Notes: Good summary, quick and accurate.
+
 # 4. Who is Horton and what does he discover in Horton Hears a Who!?
 
 **Recovered Documents:**
@@ -234,6 +253,12 @@ the city of Whoville and its inhabitants, led by Mayor Ned McDodd. He believes
 that it's his responsibility to protect them, even though others in the jungle,
 including a kangaroo named Jane, don't believe the Whos exist.
 
+**Evaluation:**
+- Precision@5: 0.8
+- Recall@5: 1.0
+- Latency: 13.27
+- Notes: Cast chunk is accepted due to "Who is Horton". Good and quick summary. 
+
 # 5. What is the relationship between Mike and Marcus in Bad Boys?
 
 **Retrieved Documents:**
@@ -283,6 +308,12 @@ have a close platonic relationship, working closely together to solve cases and
 protect each other. Throughout the movie, they are seen to be reliable partners
 and friends that are willing to risk their lives for each other. The movie does
 not suggest any romantic relationship between them.
+
+**Evaluation:**
+- Precision@5: 0.6
+- Recall@5: 0.6
+- Latency: 8.95
+- Notes: Decent summary, not much detail added but query is somewhat vague. 
 
 # 6. What happens during Lizzie’s trip to Italy in The Lizzie McGuire Movie?
 
@@ -350,6 +381,12 @@ realizing her feelings for Gordo and the two sharing a kiss on the rooftop
 before the fireworks spell "The End" as the ending for both the series and the
 movie.
 
+**Evaluation:**
+- Precision@5: 0.6
+- Recall@5: 1.0
+- Latency: 26.23
+- Notes: Long summary, a lot of detail. 
+
 # 7. Which movie involves a group trying to stop a fashion-related brainwashing plot?
 
 **Retrieved Documents:**
@@ -404,6 +441,12 @@ plot summary mentions a chaotic fashion show where the real Tiffany and Brittany
 arrive, and it's unclear if the initial brainwashing plot is successfully
 stopped. For more precise details, I would recommend watching the movie or
 reading a full plot summary.
+
+**Evaluation:**
+- Precision@5: 0.0
+- Recall@5: 0.0
+- Latency: 7.64
+- Notes: Expected Zoolander to be retrieved. Example of poor retrival. 
 
 # 8. Which movie involves a boxer rising from nothing?
 
@@ -460,6 +503,17 @@ Jerry Ferro is a carpenter and boxing instructor who, despite being older and
 out-of-shape, is noticed by a coach and given a chance to qualify for the
 Olympic Games. He goes into serious training and, motivated by his
 determination, he manages to advance in the competition.
+
+**Evaluation:**
+- Precision@5: 0.4
+- Recall@5: N/A
+    - Open-ended query with unknown number of relevant documents
+    - Relevance set cannot be fully defined
+- Latency: 16.66
+- Notes:
+    - Retrieved movie ("The Hammer") satisfies the query criteria (boxer rising from nothing)
+    - Although "Rocky" was expected, the query allows multiple valid answers (it's open-ended)
+    - Retrieval is considered successful but not ideal (did not return the most iconic example)
 
 # 9. What tragedy brings the women together in Steel Magnolias?
 
@@ -523,6 +577,16 @@ Plot Summary: Linda rejects his advice and leaves in a rage. When she gets home 
 The tragedy that brings the women together in Steel Magnolias is the illness and
 eventual death of Shelby Eatenton Latcherie. The women support M'Lynn Eatenton,
 Shelby's mother, during this difficult time and help her cope with her loss.
+
+**Evaluation:**
+- Precision@5: 0.2
+- Recall@5: 1.0
+- Latency: 11.65
+- Notes:
+    - All relevant documents were successfully retrieved (perfect recall)
+    - However, retrieval included significant irrelevant content (cast, metadata, and wrong movie)
+    - Excess noise may negatively impact generation quality
+    - However noise is related to a small number of documents being avaliable for this movie
 
 # 10. What genre is Beauty and the Beast?
 
@@ -588,3 +652,9 @@ Box Office Revenue: nan
 **Mistral Response:**
 The genres for the movie "Beauty and the Beast" are Costume drama, Animation,
 Musical, Children's, Fantasy, Music, Romance Film, and Family Film.
+
+**Evaluation:**
+- Precision@5: 1.2
+- Recall@5: 1.0
+- Latency: 4.6
+- Notes: Easy question, perfect retrival and answer generation. Looks like only the first retrieved document was used.
