@@ -1,3 +1,46 @@
+"""
+Movie RAG App via streamlit.
+
+This script creates a UI for the Movie RAG Pipeline.
+Users can type in several types of search queries.
+
+The system expects plot, metadata, and character/actor
+related questions. Additionally, users can ask for movie
+recommendations.
+
+This app is accompanied with a feature that allows users
+to search for all the movies within the database. 
+Asking questions of movies outside the database is unadvised.
+
+Dependencies
+------------
+1. movie_rag_pipeline.py:
+    - Ensure the file is under
+    the same directory as the
+    chroma collection and this
+    app.
+2. chromadb collections:
+    - movie_chunks
+    - movie_titles: 
+        - run `movie_name_vectordb.py`
+        - ensure movie_titles.txt
+        and movie_title_embeddings.npy
+        are under the same dir as the 
+        chroma collection.
+3. Nvida GPUs
+
+**Note**
+See requirements.txt to see what to install to run both this app
+and the movie_rag_pipeline.
+Run: pip install -r requirements.txt
+
+Lastly note that certain feature are commented out. If you have the
+approriate setup then feel free to comment out the llm/tokenizer as
+well as the rag pipeline/answer under the try clause. 
+
+Enjoy!
+"""
+
 # Import dependencies
 import streamlit as st # streamlit
 import chromadb # Vector Store
@@ -6,8 +49,7 @@ import torch # LLM
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig # LLM
 import textwrap # Answer generation
 from movie_rag_pipeline import load_chromadb, load_embedding_model, load_llm_and_tokenizer # Loading models + vector store
-from movie_rag_pipeline import rag_pipeline, find_movies, retrieve_documents  # Full pipeline
-import time
+from movie_rag_pipeline import rag_pipeline, find_movies  # Full pipeline
 
 
 # Load models and vector store
@@ -17,18 +59,6 @@ movie_titles = load_chromadb(r"C:\Users\KRAyu\OneDrive\nlp_essentials\course_pro
                              "movie_titles")
 embedding_model = load_embedding_model("all-mpnet-base-v2")
 #tokenizer, llm = load_llm_and_tokenizer("mistralai/Mistral-7B-Instruct-v0.3")
-
-
-# Format background
-st.markdown(
-    """
-    <style>
-    .stTextInput>div>input {
-        background-color: #f0f0f0;
-        color: #333;
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 # Create UI
 st.title("🎬🎥 Movie RAG System 🍿🎟️ ")
