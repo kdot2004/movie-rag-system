@@ -62,14 +62,14 @@ embedding_model = load_embedding_model("all-mpnet-base-v2")
 
 # Create UI
 st.title("🎬🎥 Movie RAG System 🍿🎟️ ")
-st.caption("An AI Chatbot designed to answer all your questions about movies!")
+st.write("Chat History:")
 
 
 # Create side search bar
 # https://docs.streamlit.io/develop/api-reference/layout/st.sidebar
 with st.sidebar:
     st.sidebar.title("🚨 Movies Avaliable in Database 🚨")
-    title_query = st.text_input("Search for a movie title 🔻:")
+    title_query = st.text_input("Search for a movie title:")
     num_movies = st.slider("How many movies to retrieve?", 1, 10) # https://docs.streamlit.io/develop/api-reference/widgets/st.slider
     if st.button("Find Movie"): 
         if title_query:
@@ -79,7 +79,6 @@ with st.sidebar:
                 st.write(f"{i}. {movie}")
 
 # Initialize chat history
-# https://github.com/streamlit/llm-examples/blob/main/Chatbot.py
 # https://mahapatra-preetam.medium.com/building-a-conversational-ai-with-memory-in-streamlit-using-langgraph-langchain-asyncio-and-96841a038fb5
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -109,8 +108,7 @@ if st.button("Get Answer"):
             try:
                 # Call the RAG pipeline function here
                 #answer = rag_pipeline(query, collection, embedding_model, model, tokenizer, top_k=5)
-                #st.write(textwrap.fill(answer, width=80))
-                answer = "Hellooo Worldddd"
+                answer = "Hello World!"
                 pass
             except Exception as e:
                 st.write("Error running query: {e}")
@@ -118,12 +116,9 @@ if st.button("Get Answer"):
 
         # Display assistant response in chat message container
         with st.chat_message("assistant"):
-            st.markdown(answer)
+            st.markdown(textwrap.fill(answer, width=80))
 
          # Add assistant response to chat history
-        st.session_state.messages.append({"role": "assistant", "content": answer})
+        #st.session_state.messages.append({"role": "assistant", "content": answer})
     else:
         st.write("Please enter a query.")
-
-    # https://streamlit.io/playground
-    # https://streamlit.io/gallery?category=llms
