@@ -63,4 +63,4 @@ for i in range(0, len(movies), max_batch_size):
     print(f"Added {min(i + max_batch_size, len(ids))}/{len(ids)}")
 
 # Print total num of entries in collection
-print(movie_titles.count()) # Should be 39,915
+print(movie_titles.count()) # Should be around 39,915
