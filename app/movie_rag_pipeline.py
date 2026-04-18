@@ -268,6 +268,40 @@ def rag_pipeline(query, collection, embedding_model, model, tokenizer, top_k = 3
 
   return answer
 
+# Define function to find movies
+def find_movies(query, collection, embedding_model, top_k=5):
+    """
+    This function takes an input query, generates its embedding,
+    and uses that embedding to retrieve the top-k most relevant
+    document chunks from a Chroma collection.
+
+    Parameters
+    ----------
+    query : str
+        The input query string used for retrieval.
+    collection : object
+        The Chroma collection containing embedded document chunks.
+    embedding_model : object
+        A preloaded SentenceTransformer model used to generate the query embedding.
+    top_k : int, optional
+        The number of top matching document chunks to retrieve, the default is 5.
+
+    Returns
+    -------
+    list
+        The list of the retrieved documents.
+    """
+    # Call query embedding function
+    query_embedding = get_query_embedding(query, embedding_model)
+
+    # Query chroma db
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=top_k,
+        include=["documents"]
+    )
+    return results['documents'][0]
+
 # Test Cases
 def main():
    # Load dependices

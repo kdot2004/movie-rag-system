@@ -1,0 +1,11 @@
+*.npy
+__pycache__/
+.ipynb_checkpoints/
+backup_local_notebooks/
+chroma_db/
+chroma_db3/
+new_chroma_db/
+CMU_source/
+archive/
+data/
+testing_docs/
