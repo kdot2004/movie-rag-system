@@ -658,3 +658,575 @@ Musical, Children's, Fantasy, Music, Romance Film, and Family Film.
 - Recall@5: 1.0
 - Latency: 4.6
 - Notes: Easy question, perfect retrival and answer generation. Looks like only the first retrieved document was used.
+
+# 11. I'm hosting a family-friendly Halloween party and need an animated movie that's a little spooky but sweet. Maybe something involving a misunderstanding with the undead or ghosts. Any recommendations?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 33200310_plot_0
+Movie Title: Spooky Buddies
+Wiki ID: 33200310
+Realse Date: 2011
+Plot Summary: The Halloween Hound and Warwick the Warlock are accidentally released into the town of Fernfield and have plans to destroy the world. The Buddies, consisting of the talking dogs B-Dawg, Budderball, Buddha, Mudbud, and Rose...
+--------------------------------------------------------------------------------
+Result 2
+ID: 10380700_plot_0
+Movie Title: Trick 'r Treat
+Wiki ID: 10380700
+Realse Date: 2008
+Plot Summary: The film is an anthology of four Halloween-related scary stories. One common element that ties the stories together is the presence of Sam , a mysterious pint-sized trick-or-treater wearing shabby orange pajamas with a bur...
+--------------------------------------------------------------------------------
+Result 3
+ID: 5347029_plot_0
+Movie Title: The Halloween Tree
+Wiki ID: 5347029
+Realse Date: 1993-10
+Plot Summary: The film opens to the voice of a narrator describing one small town's preparations for Halloween night. Four friends are shown at their respective homes donning costumes excitedly: Jenny as a witch, Ralph as a mummy;...
+--------------------------------------------------------------------------------
+Result 4
+ID: 403227_plot_0
+Movie Title: The Nightmare Before Christmas
+Wiki ID: 403227
+Realse Date: 1993-10-09
+Plot Summary: Halloween Town is a dream world filled with citizens such as deformed monsters, ghosts, ghouls, goblins, vampires, werewolves and witches. Jack Skellington leads them in a frightful celebration every Ha...
+--------------------------------------------------------------------------------
+Result 5
+ID: 2931530_plot_2
+Movie Title: Halloweentown High
+Wiki ID: 2931530
+Realse Date: 2004-10-08
+Plot Summary: Their haunted house depicts the ordinary lives of creatures that have typically been seen as monsters in the mortal world, including displays like the "Monster Tea Party" and ogres "picnicking in their natural set...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+I would recommend "Spooky Buddies" for your family-friendly Halloween party. This movie involves a group of talking dogs who team up with some new friends, including a ghost puppy, to save the world from destruction. The movie has a light-hearted approach to the supernatural and should provide a spooky yet sweet experience for both kids and adults. Enjoy your party!
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 4.33
+- Notes: [TBD]
+
+# 12. In the movie 'No Country for Old Men', how does the main chase start, and what is the unusual weapon used by the hitman?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 19679859_plot_0
+Movie Title: Checkpoint
+Wiki ID: 19679859
+Realse Date: 1956-12-25
+Plot Summary: Before a major motor race a man is hired by a racing team to steal the plans of a rival team. However when he is disturbed in the middle of the theft, he is forced to shoot his way out. He is then hunted down by agents o...
+--------------------------------------------------------------------------------
+Result 2
+ID: 15068907_meta_0
+Movie Title: The Gun Runners
+Wiki ID: 15068907
+Release Date: 1958
+Runtime: 82.0
+Languages: English
+Countries: United States of America
+Genres: Action/Adventure, Action, Drama, Adventure, Film adaptation
+Box Office Revenue: nan
+--------------------------------------------------------------------------------
+Result 3
+ID: 31304298_plot_0
+Movie Title: 13 Men and a Gun
+Wiki ID: 31304298
+Realse Date: 1938-06
+Plot Summary: During the First World War, Russian forces attempt to take out an Austrian artillery position.
+--------------------------------------------------------------------------------
+Result 4
+ID: 2405186_meta_0
+Movie Title: The Chase
+Wiki ID: 2405186
+Release Date: 1946-11-16
+Runtime: 86.0
+Languages: English , Spanish
+Countries: United States of America
+Genres: Crime Fiction, Mystery, Drama, Film noir, Black-and-white
+Box Office Revenue: nan
+--------------------------------------------------------------------------------
+Result 5
+ID: 6777103_plot_1
+Movie Title: The Fastest Gun Alive
+Wiki ID: 6777103
+Realse Date: 1956-07-12
+Plot Summary: Meanwhile, while everyone is in the church where they have taken an oath not to tell George's secret, Harold has come to town and finds out about George's display of gun skill from a local boy. Even though he i...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+The movie 'No Country for Old Men' does not involve a main chase starting due to a theft of plans or a gunfight in a church. The unusual weapon used by the hitman, Anton Chigurh, in this movie is a cattle gun, which is a type of shotgun modified to fire captive pellets. This is different from the movies mentioned, which involve more traditional firearms. If you are referring to a different movie, please provide more context for the question.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 4.33
+- Notes: [TBD]
+
+
+# 13. I'm looking for a fun, upbeat musical movie for a middle school sleepover. Something about a summer camp for singing where a regular girl meets a famous pop star would be perfect.
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 12414587_plot_0
+Movie Title: Camp Rock
+Wiki ID: 12414587
+Realse Date: 2008-06-20
+Plot Summary: The story follows Mitchie Torres , an aspiring young musician who hopes to become a professional singer. Mitchie wants to go to a music camp named "Camp Rock". Since the family can not afford the tuition, Mitchie's mother...
+--------------------------------------------------------------------------------
+Result 2
+ID: 871013_plot_0
+Movie Title: Sleepover
+Wiki ID: 871013
+Realse Date: 2004-07-09
+Plot Summary: On the last day of 8th grade, Julie Corky has a slumber party. One of the girls she has invited, Staci Blake , declines, saying she is going to the high school dance with her boyfriend Todd . Julie is worried about how she ...
+--------------------------------------------------------------------------------
+Result 3
+ID: 28953349_plot_0
+Movie Title: Rising Stars
+Wiki ID: 28953349
+Realse Date: 2010-10-22
+Plot Summary: A family musical with heart, Rising Stars explores the sacrifices that come with fame in reality television-obsessed culture. Challenged with creating songs and music videos, three musical acts find more than their fut...
+--------------------------------------------------------------------------------
+Result 4
+ID: 25147522_plot_0
+Movie Title: Elle: A Modern Cinderella Tale
+Wiki ID: 25147522
+Realse Date: 2010
+Plot Summary: Elle Daniels has dreamed of being a famous singer-songwriter for as long as she can remember. On the day of her audition for Berklee, the plane her parents are travelling in crashes. Crushed, Elle moves in ...
+--------------------------------------------------------------------------------
+Result 5
+ID: 12414587_plot_2
+Movie Title: Camp Rock
+Wiki ID: 12414587
+Realse Date: 2008-06-20
+Plot Summary: Shane believes that Mitchie lied to him just to use him and Mitchie gets kicked out of Tess's group. On the eve of Final Jam, Tess tricks Mitchie and Caitlyn into not participating until the Final Jam is over by telling B...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+Based on the context provided, the movie that best fits your description for a fun, upbeat musical movie for a middle school sleepover is "Camp Rock". It features a summer camp for singing, a regular girl named Mitchie Torres who meets a famous pop star named Shane Gray, and has a mix of both drama and music. The plot revolves around Mitchie's journey to follow her dream of becoming a professional singer while dealing with the challenges of meeting and falling for a famous pop star. The movie has a positive message and an upbeat tone, making it suitable for a sleepover setting.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 4.33
+- Notes: [TBD]
+
+
+# 14. Can you tell me the name of the ancient sorcerer that the truck driver has to fight in the movie 'Big Trouble in Little China'?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 30574080_meta_0
+Movie Title: The Sorcerer and the White Snake
+Wiki ID: 30574080
+Release Date: 2011-09-28
+Runtime: 102.0
+Languages: Chinese language, Standard Mandarin
+Countries: Hong Kong, China
+Genres: Adventure, Animation, Cult, Period piece, Fantasy, Comedy, Drama, Action, Chinese Movies
+Box Office Revenue: nan
+--------------------------------------------------------------------------------
+Result 2
+ID: 697113_plot_0
+Movie Title: Big Trouble in Little China
+Wiki ID: 697113
+Realse Date: 1986-07-02
+Plot Summary: Truck driver Jack Burton and his friend Wang Chi go to San Francisco International Airport to pick up Wang's fiancee Miao Yin . A Chinese street gang, the Lords of Death, kidnaps Miao Yin and takes her int...
+--------------------------------------------------------------------------------
+Result 3
+ID: 22826758_cast_0
+Movie Title: Confucius
+Wiki ID: 22826758
+Release Date: 2010-01-28
+Characters and Actors:
+Confucius:  Chow Yun-Fat
+Unknown Character:  Zhou Xun
+--------------------------------------------------------------------------------
+Result 4
+ID: 30574080_cast_0
+Movie Title: The Sorcerer and the White Snake
+Wiki ID: 30574080
+Release Date: 2011-09-28
+Characters and Actors:
+Rabbit Devil:  Miriam Yeung
+Abott Fahai:  Jet Li
+White Snake:  Huang Shengyi
+Xu Xian:  Raymond Lam
+Green Snake:  Charlene Choi
+Snow Goblin:  Vivian Hsu
+Mysterious Herbalist:  Law Kar-Ying
+...
+--------------------------------------------------------------------------------
+Result 5
+ID: 35805152_cast_0
+Movie Title: China Heavyweight
+Wiki ID: 35805152
+Release Date: 2012-01-20
+Characters and Actors:
+Unknown
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+The ancient sorcerer that the truck driver (Jack Burton) has to fight in the movie 'Big Trouble in Little China' is Lo Pan.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 4.33
+- Notes: [TBD]
+
+
+# 15. My film club is doing a showcase on intense psychological thrillers. Do you have a recommendation about an artist or dancer who slowly loses their grip on reality while trying to achieve perfection?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 12811780_plot_0
+Movie Title: Ghost Dance
+Wiki ID: 12811780
+Realse Date: Unknown
+Plot Summary: Through the experiences of two women in Paris and London, Ghost Dance offers an analysis of the complexity of our conceptions of ghosts, memory and the past. It is an adventure film strongly influenced by the work of Jacqu...
+--------------------------------------------------------------------------------
+Result 2
+ID: 31327605_plot_0
+Movie Title: Dance Macabre
+Wiki ID: 31327605
+Realse Date: 1992-05-29
+Plot Summary: A dance instructor brings his dance troupe to Russia for training. What his dancers don't know, however, is that he has a dual personality--and his hidden personality is a serial killer.
+--------------------------------------------------------------------------------
+Result 3
+ID: 28098139_plot_0
+Movie Title: Remedy
+Wiki ID: 28098139
+Realse Date: 2005-03-29
+Plot Summary: The film is about a New York City artist who claims to have witnessed his best friend's murder. Due to a drug problem, he cannot recall what happened, and is the prime suspect. He desperately tries to remember before it is t...
+--------------------------------------------------------------------------------
+Result 4
+ID: 33931528_meta_0
+Movie Title: The Dance of Reality
+Wiki ID: 33931528
+Release Date: Unknown
+Runtime: nan
+Languages: Spanish
+Countries: nan
+Genres: Biographical film
+Box Office Revenue: nan
+--------------------------------------------------------------------------------
+Result 5
+ID: 10065066_plot_0
+Movie Title: Sublime
+Wiki ID: 10065066
+Realse Date: 2007-03-13
+Plot Summary: The plot centers on the protagonist George Grieves , who checks into the Mt. Abaddon Hospital for a routine procedure only to find horrors await him. Awakening from what was supposedly a simple colonoscopy, Grieves is told ...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+Based on the context provided, a movie that fits the description of an artist or dancer who slowly loses their grip on reality while trying to achieve perfection could be "Remedy." In this film, the protagonist, a New York City artist, claims to have witnessed his best friend's murder and is the prime suspect. He is struggling with drug problems and cannot recall what happened, leading him to a mental struggle as he desperately tries to remember before it's too late. Another movie that slightly fits the description, although not about an artist or dancer, is "Dance Macabre" where a dance instructor, who has a dual personality, is also a serial killer. However, this film is more focused on the thriller aspect and less on the psychological struggle to achieve perfection. "Sublime" could also be considered, as it presents a protagonist, George Grieves, who finds himself trapped in a nightmare of his own creation after a complication during a routine procedure. He is struggling to escape this netherworld of manifestations of his worst fears. However, the film primarily falls into the horror genre rather than a psychological thriller.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 24.54
+- Notes: [TBD]
+
+
+# 16. According to the plot of 'The Incredibles', what is the name of the main villain they have to stop, and why did the family have to go into hiding in the first place?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 565879_meta_0
+Movie Title: The Incredibles
+Wiki ID: 565879
+Release Date: 2004-10-27
+Runtime: 116.0
+Languages: French , English , Spanish
+Countries: United States of America
+Genres: Adventure, Superhero movie, Computer Animation, Children's/Family, Superhero, Animation, Action/Adventure, Comedy, Family Film, Actio...
+--------------------------------------------------------------------------------
+Result 2
+ID: 565879_cast_0
+Movie Title: The Incredibles
+Wiki ID: 565879
+Release Date: 2004-10-27
+Characters and Actors:
+Mr. Incredible:  Craig T. Nelson
+Elastigirl:  Holly Hunter
+Frozone:  Samuel L. Jackson
+Syndrome:  Jason Lee
+Bomb Voyage:  Dominique Louis
+Mrs. Hogenson:  Jean Sincere
+Jack-Jack Parr:  Eli Fucile,  Maeve Andr...
+--------------------------------------------------------------------------------
+Result 3
+ID: 565879_plot_0
+Movie Title: The Incredibles
+Wiki ID: 565879
+Realse Date: 2004-10-27
+Plot Summary: "Supers"—humans gifted with superpowers—were once seen as heroes, but collateral damage from their various good deeds led the government to create a "Supers Relocation Program", forcing the Supers to fit in among the ...
+--------------------------------------------------------------------------------
+Result 4
+ID: 565879_plot_3
+Movie Title: The Incredibles
+Wiki ID: 565879
+Realse Date: 2004-10-27
+Plot Summary: Syndrome launches the Omnidroid on a rocket and follows in his aircraft. After his departure, Violet escapes and helps to free the rest of the family, and with Mirage's help, they board a second rocket bound for the c...
+--------------------------------------------------------------------------------
+Result 5
+ID: 565879_plot_4
+Movie Title: The Incredibles
+Wiki ID: 565879
+Realse Date: 2004-10-27
+Plot Summary: Three months later, the Parrs have re-adjusted to normal life, but when a new villain, the Underminer, appears, the Parrs put on their masks, ready to battle the new foe.
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+The main villain the family has to stop in 'The Incredibles' is Syndrome. The family had to go into hiding in the first place because the government created a "Supers Relocation Program" to force Supers (humans with superpowers) to fit in among the civilians and not use their superpowers. This was due to collateral damage from various good deeds by Supers.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 11.07
+- Notes: [TBD]
+
+
+# 17. My friends and I want to turn our brains off and watch a completely ridiculous comedy about guys trying to retrace their steps and find their lost vehicle after a wild party. What should we watch?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 5733558_plot_0
+Movie Title: Wild Hogs
+Wiki ID: 5733558
+Realse Date: 2007-02-27
+Plot Summary: Doug Madsen , Woody Stevens , Bobby Davis , and Dudley Frank are four middle-aged suburban men living in a Cincinnati area suburb who find themselves frustrated with the pace of daily life and lack of adventure. Doug is a ...
+--------------------------------------------------------------------------------
+Result 2
+ID: 23878965_meta_0
+Movie Title: Road Trip: Beer Pong
+Wiki ID: 23878965
+Release Date: 2009-08-11
+Runtime: 95.0
+Languages: English
+Countries: United States of America
+Genres: Comedy
+Box Office Revenue: nan
+--------------------------------------------------------------------------------
+Result 3
+ID: 21918632_plot_0
+Movie Title: The Hangover
+Wiki ID: 21918632
+Realse Date: 2009-06-05
+Plot Summary: Celebrating his impending marriage to Tracy Garner, Doug Billings and his friends Phil Wenneck, Stu Price, and Tracy's brother Alan travel to Las Vegas for a bachelor party, staying at Caesars Palace. The next morning,...
+--------------------------------------------------------------------------------
+Result 4
+ID: 18410798_plot_1
+Movie Title: Amusement
+Wiki ID: 18410798
+Realse Date: 2008-10-09
+Plot Summary: A piece of paper flies from the semi, hitting their windshield. It says, "Help Me". Moments later, the girl jumps from the semi and lands on their car. The semi continues to drive as Rob, Shelby and the driver of the Jeep...
+--------------------------------------------------------------------------------
+Result 5
+ID: 18410798_plot_2
+Movie Title: Amusement
+Wiki ID: 18410798
+Realse Date: 2008-10-09
+Plot Summary: He moves to the front of the house, concealing himself behind the screen door as the semi driver talks to someone over the phone. Meanwhile, Rob waits in the Jeep. He nears a noise and finds a cb-radio in the center conso...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+Based on the context provided, it seems that the movie "The Hangover" fits your description best. The plot revolves around a bachelor party in Las Vegas that results in the main characters losing their memories and their vehicle, and they spend the movie trying to retrace their steps and find their lost vehicle. It's a comedy with a lot of absurd situations and humor, which should provide a fun and ridiculous watch for you and your friends.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 11.25
+- Notes: [TBD]
+
+
+# 18. In the movie 'Mad Max Beyond Thunderdome', what is the name of the gladiator arena Max is forced to fight in, and who is the ruler of Bartertown?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 598868_cast_0
+Movie Title: Mad Max Beyond Thunderdome
+Wiki ID: 598868
+Release Date: 1985-07-10
+Characters and Actors:
+Unknown Character:  Tina Turner,  Helen Buday,  Bruce Spence,  Frank Thring,  Robert Grubb,  Ollie Hall,  Bob Hornery,  Andrew Oh,  Paul Larsson,  Adam Cockburn,  Angry Anderson,  George Spartels,...
+--------------------------------------------------------------------------------
+Result 2
+ID: 598868_meta_0
+Movie Title: Mad Max Beyond Thunderdome
+Wiki ID: 598868
+Release Date: 1985-07-10
+Runtime: 107.0
+Languages: English
+Countries: United States of America, Australia, New Zealand
+Genres: Science Fiction, Indie, World cinema, Doomsday film, Apocalyptic and post-apocalyptic fiction, Action
+Box Office Reve...
+--------------------------------------------------------------------------------
+Result 3
+ID: 598868_plot_0
+Movie Title: Mad Max Beyond Thunderdome
+Wiki ID: 598868
+Realse Date: 1985-07-10
+Plot Summary: Max Rockatansky rides a camel-drawn wagon across the Australian desert when he is attacked by Jedediah, a pilot flying a Transavia PL-12 Airtruk, who steals his belongings and vehicle. Max continues on foot...
+--------------------------------------------------------------------------------
+Result 4
+ID: 598868_plot_1
+Movie Title: Mad Max Beyond Thunderdome
+Wiki ID: 598868
+Realse Date: 1985-07-10
+Plot Summary: After being tested in a difficult audition, Aunty recognises Max as a resourceful fighter, and strikes a deal with him to provoke a duel with Blaster in the "Thunderdome," a gladiatorial arena where conflic...
+--------------------------------------------------------------------------------
+Result 5
+ID: 598868_plot_3
+Movie Title: Mad Max Beyond Thunderdome
+Wiki ID: 598868
+Realse Date: 1985-07-10
+Plot Summary: After nursing him back to health, they are shocked that Max insists that they remain in the relative safety of the oasis, knowing that the only "civilization" within reach is the rough and hellish Bartertow...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+The name of the gladiator arena in the movie 'Mad Max Beyond Thunderdome' is the Thunderdome. The ruler of Bartertown is Aunty Entity.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 5.72
+- Notes: [TBD]
+
+
+# 19. We're having a horror movie marathon and want a really scary found-footage film. Is there one where a family puts up security cameras after a break-in and accidentally catches a demon attacking them?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 28945798_plot_0
+Movie Title: 8213: Gacy House
+Wiki ID: 28945798
+Realse Date: 2010-09-28
+Plot Summary: A group of paranormal investigators enter the abandoned home of pedophile and serial killer John Gacy, hoping to find evidence of paranormal activity. Upon entering the house they set up cameras throughout the aban...
+--------------------------------------------------------------------------------
+Result 2
+ID: 24366494_plot_0
+Movie Title: Paranormal Activity
+Wiki ID: 24366494
+Realse Date: 2009-10-16
+Plot Summary: In September 2006, young couple Katie and Micah have recently moved to the suburbs. Katie claims that an "evil" presence has haunted her periodically since childhood and believes that it is still following her. ...
+--------------------------------------------------------------------------------
+Result 3
+ID: 25436873_plot_1
+Movie Title: Paranormal Entity
+Wiki ID: 25436873
+Realse Date: 2009
+Plot Summary: When the bells ring, Thomas investigates. The wire and bell outside his door are ripped from the wall and thrown at him. Thomas shuts himself in the bedroom and the demon bangs on his door. Thomas receives a phone call ...
+--------------------------------------------------------------------------------
+Result 4
+ID: 24366494_plot_2
+Movie Title: Paranormal Activity
+Wiki ID: 24366494
+Realse Date: 2009-10-16
+Plot Summary: The two go out of the house that evening, leaving the Ouija board in the living room. The curtains and plants start to blow around and the Ouija board's planchette moves on its own and small fire erupts on the b...
+--------------------------------------------------------------------------------
+Result 5
+ID: 21488993_plot_4
+Movie Title: Night of the Demons
+Wiki ID: 21488993
+Realse Date: 2010-09-17
+Plot Summary: They decide to leave through the house's escape tunnel. On their way, they arm themselves with a gun and a rusty metal bar. While in the tunnel, they discover the tunnel has caved in, before being attacked by Li...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+Yes, one movie that matches your description is "Paranormal Entity" (2009). In this found-footage film, a family sets up cameras in their home after a break-in, but they end up capturing footage of a demonic entity terrorizing them. The demonic activity escalates throughout the film, causing various disturbances and attacks on the family members. The movie follows the family's attempts to understand and combat the supernatural threat they are facing.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 11.90
+- Notes: [TBD]
+
+
+# 20. In the movie 'Forrest Gump', what are some of the specific major 20th-century historical events or famous figures that Forrest accidentally influences or meets?
+
+**Retrieved Documents:**
+```
+Result 1
+ID: 41528_cast_0
+Movie Title: Forrest Gump
+Wiki ID: 41528
+Release Date: 1994-06-23
+Characters and Actors:
+Young Forrest Gump:  Michael Conner Humphreys
+Forrest Gump:  Tom Hanks
+Jenny Curran:  Robin Wright
+Lieutenant Dan Taylor:  Gary Sinise
+Benjamin Buford "Bubba" Blue:  Mykelti Williamson
+Mrs. Gump:  Sally Field
+Nu...
+--------------------------------------------------------------------------------
+Result 2
+ID: 41528_plot_0
+Movie Title: Forrest Gump
+Wiki ID: 41528
+Realse Date: 1994-06-23
+Plot Summary: As he waits at a bus stop, Forrest Gump starts recounting his life story to nearby strangers. His story starts with the leg braces he had to wear as a child, which resulted in him being bullied by children. He lives with ...
+--------------------------------------------------------------------------------
+Result 3
+ID: 11414473_cast_0
+Movie Title: Finding Forrester
+Wiki ID: 11414473
+Release Date: 2000-12-19
+Characters and Actors:
+Prof. Robert Crawford:  F. Murray Abraham
+Claire Spence:  Anna Paquin
+Terrell Wallace:  Busta Rhymes
+Dr. Spence:  Michael Nouri
+Ms. Joyce:  April Grace
+John Coleridge:  Michael Pitt
+Prof. Matthews:  Rich...
+--------------------------------------------------------------------------------
+Result 4
+ID: 41528_meta_0
+Movie Title: Forrest Gump
+Wiki ID: 41528
+Release Date: 1994-06-23
+Runtime: 136.0
+Languages: English
+Countries: United States of America
+Genres: Coming of age, Comedy film, Drama, War film, Romantic drama, Romance Film
+Box Office Revenue: 677387716.0
+--------------------------------------------------------------------------------
+Result 5
+ID: 41528_plot_1
+Movie Title: Forrest Gump
+Wiki ID: 41528
+Realse Date: 1994-06-23
+Plot Summary: While recovering from his injuries Forrest meets Dan Taylor again. Now an amputee, he is furious at Forrest for leaving him a "cripple" and cheating him out of his destiny to die in battle like his ancestors. In Washingto...
+--------------------------------------------------------------------------------
+```
+
+**Mistral Response:**
+In the movie 'Forrest Gump', Forrest accidentally influences or meets several significant 20th-century historical figures or events, including: 1. Young Elvis Presley, the legendary musician. 2. George Wallace, the Governor of Alabama, who famously stood in the Schoolhouse Door in 1963 to prevent the integration of the University of Alabama. 3. President John F. Kennedy, who Forrest meets at the University of Alabama. 4. President Lyndon B. Johnson, who awards Forrest the Medal of Honor. 5. President Richard Nixon, who Forrest inadvertently helps expose the Watergate scandal by staying at the Watergate Hotel. 6. The Chinese ping pong team, as Forrest competes against them on a goodwill tour. 7. The Dick Cavett Show, a popular talk show during the 1960s and 1970s, where Forrest is invited to appear.
+
+**Evaluation:**
+- Precision@5: [TBD]
+- Recall@5: [TBD]
+- Latency: 28.18
+- Notes: [TBD]
