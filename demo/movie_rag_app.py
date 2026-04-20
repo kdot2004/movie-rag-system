@@ -48,20 +48,53 @@ from sentence_transformers import SentenceTransformer # Embedding model
 import torch # LLM
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig # LLM
 import textwrap # Answer generation
-from movie_rag_pipeline import load_chromadb, load_embedding_model, load_llm_and_tokenizer # Loading models + vector store
-from movie_rag_pipeline import rag_pipeline, find_movies  # Full pipeline
+from movie_rag_pipeline import (
+    load_chromadb,
+    load_embedding_model,
+    load_llm_and_tokenizer,
+    rag_pipeline,
+    find_movies,
+) # Loading models + vector store + pipeline
+
+# Set page configuration https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Movie RAG", page_icon="🎬", layout="wide")
 
 
-# Load models and vector store
+# Load embedding model and vector store
 movie_chunks = load_chromadb("/content/drive/MyDrive/chroma_db", "movie_chunks")
 movie_titles = load_chromadb("/content/drive/MyDrive/chroma_db", "movie_titles")
 embedding_model = load_embedding_model("all-mpnet-base-v2")
-#tokenizer, llm = load_llm_and_tokenizer("mistralai/Mistral-7B-Instruct-v0.3")
+
+
+# Lazy loader for LLM
+def get_llm():
+    if "tokenizer" not in st.session_state or "mistral" not in st.session_state:
+        with st.spinner("Loading language model for the first time..."):
+            tokenizer, mistral = load_llm_and_tokenizer("mistralai/Mistral-7B-Instruct-v0.3")
+            st.session_state.tokenizer = tokenizer
+            st.session_state.mistral = mistral
+    return st.session_state.tokenizer, st.session_state.mistral
 
 # Create UI
-st.title("🎬🎥 Movie RAG System 🍿🎟️ ")
-st.write("Chat History:")
 
+# Title
+st.title("🎬🎥 Movie RAG System 🍿🎟️ ")
+st.caption("Note: the first question may take longer because the language model loads on first use.")
+
+# Set up chat history
+# https://mahapatra-preetam.medium.com/building-a-conversational-ai-with-memory-in-streamlit-using-langgraph-langchain-asyncio-and-96841a038fb5
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display a welcome message if the chat is empty
+if not st.session_state.messages:
+    with st.chat_message("assistant"):
+        st.write("Hello, I am your personal movie Q&A assistant! Ask away! 🤖")
+
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
 # Create side search bar
 # https://docs.streamlit.io/develop/api-reference/layout/st.sidebar
@@ -76,46 +109,33 @@ with st.sidebar:
             for i, movie in enumerate(retrieved_movies, start=1):
                 st.write(f"{i}. {movie}")
 
-# Initialize chat history
-# https://mahapatra-preetam.medium.com/building-a-conversational-ai-with-memory-in-streamlit-using-langgraph-langchain-asyncio-and-96841a038fb5
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+# https://docs.streamlit.io/develop/api-reference/execution-flow/st.form
+with st.form("qa_form"):
+    query = st.text_input("Enter your query:") # Chat Interface: https://docs.streamlit.io/develop/api-reference/chat/st.chat_input
+    ask_submit = st.form_submit_button("Get Answer")
 
-# Display a welcome message if the chat is empty
-if not st.session_state.messages:
-    with st.chat_message("assistant"):
-        st.write("Hello, I am your personal movie Q&A assistant! Ask away! 🤖")
 
-# Display chat messages from history on app rerun
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-# Chat Interface: https://docs.streamlit.io/develop/api-reference/chat/st.chat_input
-query = st.text_input("Enter your query:", "")
-
-if st.button("Get Answer"):
+if ask_submit:
     if query:
-        # Display user message in chat message container
+        # Add query to chat history
+        st.session_state.messages.append({"role": "user", "content": query})
+        
+        # Display
         with st.chat_message("user"):
             st.markdown(query)
 
-        # Add user message to chat history for immediate display
-        st.session_state.messages.append({"role": "user", "content": query})
-        # Show spinner widget while response is being generated
-        with st.spinner("Generating Answer... Please Be Patient"):
+        with st.spinner("Generating answer..."):
             try:
-                # Call the RAG pipeline function here
-                answer = rag_pipeline(query, movie_chunks, embedding_model, model, tokenizer, top_k=5)
-                pass
+                tokenizer, mistral = get_llm() # Load LLM
+                # Call pipeline
+                answer = rag_pipeline(query, movie_chunks, embedding_model, mistral, tokenizer, top_k=5)
             except Exception as e:
-                st.write("Error running query: {e}")
-                answer = "Sorry I ran into a unexpected error, please try again!"
+                answer = f"Sorry, I ran into an error: {e}"
+        # Add answer to chat history
+        st.session_state.messages.append({"role": "assistant", "content": answer})
 
-        # Display assistant response in chat message container
+        # Print result
         with st.chat_message("assistant"):
             st.markdown(textwrap.fill(answer, width=80))
-
-         # Add assistant response to chat history
-        #st.session_state.messages.append({"role": "assistant", "content": answer})
     else:
-        st.write("Please enter a query.")
+        st.warning("Please enter a query.")
