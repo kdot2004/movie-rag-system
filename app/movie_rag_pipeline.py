@@ -47,8 +47,11 @@ from sentence_transformers import SentenceTransformer # Embedding model
 import torch # LLM
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig # LLM
 import textwrap # Answer generation
+import streamlit as st # streamlit app
 
 # Functions to load dependencies
+@st.cache_resource # https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_resource
+# https://docs.kanaries.net/topics/Streamlit/streamlit-caching
 def load_chromadb(file_path, collection_name):
     """
     Loads and initializes Chroma DB collection.
@@ -68,6 +71,7 @@ def load_chromadb(file_path, collection_name):
     client = chromadb.PersistentClient(path=file_path) # Whatever your path is for chroma_db
     return client.get_collection(name=collection_name) # Collection to return
 
+@st.cache_resource
 def load_embedding_model(model_name):
     """
     Loads a embedding model from sentence transformers.
@@ -86,6 +90,7 @@ def load_embedding_model(model_name):
     """
     return SentenceTransformer(model_name)
 
+@st.cache_resource
 def load_llm_and_tokenizer(model_id):
     """
     Load a language model and its corresponding tokenizer.

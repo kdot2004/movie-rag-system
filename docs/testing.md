@@ -704,10 +704,17 @@ Plot Summary: Their haunted house depicts the ordinary lives of creatures that h
 I would recommend "Spooky Buddies" for your family-friendly Halloween party. This movie involves a group of talking dogs who team up with some new friends, including a ghost puppy, to save the world from destruction. The movie has a light-hearted approach to the supernatural and should provide a spooky yet sweet experience for both kids and adults. Enjoy your party!
 
 **Evaluation:**
-- Precision@5: [TBD]
-- Recall@5: [TBD]
+- Precision@5: 0.8
+- Recall@5: N/A
+    - Open-ended query with unknown number of relevant documents
+    - Relevance set cannot be fully defined
 - Latency: 4.33
-- Notes: [TBD]
+- Notes: 
+    - Retrieval quality is strong, most returned documents match the query intent.
+    - One poor result ("Trick 'r Treat", dark horror not exactly family friendly) lowered precision. 
+    - Query is open-ended, so recall cannot be evaluated.
+    - Model response is acceptable but not optimal stronger matches (e.g., "The Nightmare Before Christmas") were retrieved but not selected.
+
 
 # 12. In the movie 'No Country for Old Men', how does the main chase start, and what is the unusual weapon used by the hitman?
 
@@ -762,10 +769,14 @@ Plot Summary: Meanwhile, while everyone is in the church where they have taken a
 The movie 'No Country for Old Men' does not involve a main chase starting due to a theft of plans or a gunfight in a church. The unusual weapon used by the hitman, Anton Chigurh, in this movie is a cattle gun, which is a type of shotgun modified to fire captive pellets. This is different from the movies mentioned, which involve more traditional firearms. If you are referring to a different movie, please provide more context for the question.
 
 **Evaluation:**
-- Precision@5: [TBD]
-- Recall@5: [TBD]
+- Precision@5: 0.0
+- Recall@5: 0.0
 - Latency: 4.33
-- Notes: [TBD]
+- **Notes:**
+    - Complete retrieval failure: no relevant documents for "No Country for Old Men" were returned.
+    - Model response partially correct (cattle gun) but not grounded in retrieved context.
+    - Indicates the model relied on prior knowledge rather than the retrieval pipeline.
+    - This is a critical failure case for the RAG system, as it defeats the purpose of retrieval-based generation.
 
 
 # 13. I'm looking for a fun, upbeat musical movie for a middle school sleepover. Something about a summer camp for singing where a regular girl meets a famous pop star would be perfect.
@@ -813,10 +824,15 @@ Plot Summary: Shane believes that Mitchie lied to him just to use him and Mitchi
 Based on the context provided, the movie that best fits your description for a fun, upbeat musical movie for a middle school sleepover is "Camp Rock". It features a summer camp for singing, a regular girl named Mitchie Torres who meets a famous pop star named Shane Gray, and has a mix of both drama and music. The plot revolves around Mitchie's journey to follow her dream of becoming a professional singer while dealing with the challenges of meeting and falling for a famous pop star. The movie has a positive message and an upbeat tone, making it suitable for a sleepover setting.
 
 **Evaluation:**
-- Precision@5: [TBD]
-- Recall@5: [TBD]
+- Precision@5: 0.4
+- Recall@5: 1.0
 - Latency: 4.33
-- Notes: [TBD]
+- **Notes:**
+    - Correct movie ("Camp Rock") retrieved at rank 1, enabling accurate generation.
+    - Multiple relevant plot chunks were retrieved, resulting in perfect recall.
+    - Precision is relatively low due to inclusion of loosely related music-themed movies.
+    - Despite lower precision, system performance is strong because the top-ranked result is highly relevant.
+    - Demonstrates that ranking quality is more important than overall precision in top-k retrieval.
 
 
 # 14. Can you tell me the name of the ancient sorcerer that the truck driver has to fight in the movie 'Big Trouble in Little China'?
@@ -879,11 +895,15 @@ Unknown
 The ancient sorcerer that the truck driver (Jack Burton) has to fight in the movie 'Big Trouble in Little China' is Lo Pan.
 
 **Evaluation:**
-- Precision@5: [TBD]
-- Recall@5: [TBD]
+- Precision@5: 0.2
+- Recall@5: 0.25
 - Latency: 4.33
-- Notes: [TBD]
-
+- Notes:
+    - Only 1 out of 6 relevant plot chunks was retrieved, resulting in low recall.
+    - Retrieved chunk explicitly contained the key information ("Lo Pan"), enabling correct answer generation.
+    - Despite low precision and recall, the system succeeded because the necessary entity was present in the retrieved context.
+    - Demonstrates that full recall is not always required for factual QA tasks if critical information appears in top-k results.
+    - Retrieval noise did not significantly impact answer quality in this case.
 
 # 15. My film club is doing a showcase on intense psychological thrillers. Do you have a recommendation about an artist or dancer who slowly loses their grip on reality while trying to achieve perfection?
 
@@ -934,10 +954,19 @@ Plot Summary: The plot centers on the protagonist George Grieves , who checks in
 Based on the context provided, a movie that fits the description of an artist or dancer who slowly loses their grip on reality while trying to achieve perfection could be "Remedy." In this film, the protagonist, a New York City artist, claims to have witnessed his best friend's murder and is the prime suspect. He is struggling with drug problems and cannot recall what happened, leading him to a mental struggle as he desperately tries to remember before it's too late. Another movie that slightly fits the description, although not about an artist or dancer, is "Dance Macabre" where a dance instructor, who has a dual personality, is also a serial killer. However, this film is more focused on the thriller aspect and less on the psychological struggle to achieve perfection. "Sublime" could also be considered, as it presents a protagonist, George Grieves, who finds himself trapped in a nightmare of his own creation after a complication during a routine procedure. He is struggling to escape this netherworld of manifestations of his worst fears. However, the film primarily falls into the horror genre rather than a psychological thriller.
 
 **Evaluation:**
-- Precision@5: [TBD]
-- Recall@5: [TBD]
+- Precision@5: 0.2
+- Recall@5: N/A
+    - Open-ended query with unknown number of relevant documents
+    - Relevance set cannot be fully defined
 - Latency: 24.54
-- Notes: [TBD]
+- Notes:
+    - The expected target for this query is Black Swan.
+    - The retrieval step completely failed to return the correct movie or any strongly relevant alternatives.
+    - One partially relevant result (Remedy) includes an artist experiencing psychological instability, but does not match the core themes of dance and perfection.
+    - This highlights a key weakness of the system: difficulty handling implicit semantic queries that require understanding underlying themes rather than relying on explicit keywords.
+    - The model’s final answer suggests unrelated films, indicating that generation quality is heavily constrained by poor retrieval.
+    - We consider this a failure case, as the system is unable to connect high-level concepts (perfection, artistic obsession, psychological decline) to the correct movie.
+    - This suggests the need for improved embedding models or query expansion techniques to better capture abstract thematic relationships.
 
 
 # 16. According to the plot of 'The Incredibles', what is the name of the main villain they have to stop, and why did the family have to go into hiding in the first place?
