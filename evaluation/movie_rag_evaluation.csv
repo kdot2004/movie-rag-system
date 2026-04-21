@@ -1,0 +1,31 @@
+idx,query,bleu,rougeL,meteor,ter,chrf,bertscore_f1,precision,latency
+1,What is the plot of The Hunger Games?,0.0325,0.1233,0.3133,752.0,29.9329,0.8679,0.8,32.77
+2,What happens at the end of Jaws: The Revenge?,0.3114,0.4638,0.5781,152.381,51.1734,0.9236,0.4,9.34
+3,What is Fletcher Reede’s main problem in Liar Liar?,0.1172,0.2857,0.5344,294.7368,43.5177,0.8956,0.6,10.67
+4,Who is Horton and what does he discover in Horton Hears a Who!?,0.2683,0.4,0.6137,271.4286,56.3454,0.8978,1.0,13.27
+5,What is the relationship between Mike and Marcus in Bad Boys?,0.1392,0.2828,0.4036,256.0,45.6613,0.9057,0.6,8.95
+6,What happens during Lizzie’s trip to Italy in The Lizzie McGuire Movie?,0.0119,0.1263,0.304,665.2174,24.6169,0.873,1.0,26.23
+7,Which movie involves a group trying to stop a fashion-related brainwashing plot?,0.0068,0.1606,0.2177,186.0465,29.0908,0.8523,0.4,7.64
+8,Which movie involves a boxer rising from nothing?,0.0186,0.1957,0.3064,173.3333,24.2555,0.8746,0.4,16.66
+9,What tragedy brings the women together in Steel Magnolias?,0.1816,0.386,0.5215,164.7059,49.6806,0.9023,1.0,11.65
+10,What genre is Beauty and the Beast?,0.1033,0.6111,0.7194,123.0769,46.7034,0.9178,0.8,4.6
+11,I'm hosting a family-friendly Halloween party and need an animated movie that's a little spooky but sweet. Maybe something involving a misunderstanding with the undead or ghosts. Any recommendations?,0.0052,0.1649,0.1937,157.1429,27.8882,0.875,0.8,4.33
+12,"In the movie 'No Country for Old Men', how does the main chase start, and what is the unusual weapon used by the hitman?",0.0576,0.2308,0.4313,300.0,33.1865,0.873,0.0,4.33
+13,"I'm looking for a fun, upbeat musical movie for a middle school sleepover. Something about a summer camp for singing where a regular girl meets a famous pop star would be perfect.",0.0656,0.2097,0.4895,376.0,31.9455,0.89,0.4,4.33
+14,Can you tell me the name of the ancient sorcerer that the truck driver has to fight in the movie 'Big Trouble in Little China'?,0.2148,0.5143,0.7559,116.6667,69.4751,0.9292,0.2,4.33
+15,My film club is doing a showcase on intense psychological thrillers. Do you have a recommendation about an artist or dancer who slowly loses their grip on reality while trying to achieve perfection?,0.0102,0.1048,0.2135,895.0,21.8815,0.8659,0.2,24.54
+16,"According to the plot of 'The Incredibles', what is the name of the main villain they have to stop, and why did the family have to go into hiding in the first place?",0.0173,0.3529,0.4222,200.0,45.5984,0.8957,0.8,11.07
+17,My friends and I want to turn our brains off and watch a completely ridiculous comedy about guys trying to retrace their steps and find their lost vehicle after a wild party. What should we watch?,0.0113,0.1649,0.3888,206.0606,30.5433,0.8692,0.2,11.25
+18,"In the movie 'Mad Max Beyond Thunderdome', what is the name of the gladiator arena Max is forced to fight in, and who is the ruler of Bartertown?",0.2945,0.6286,0.7609,108.3333,66.8115,0.9252,0.8,5.72
+19,We're having a horror movie marathon and want a really scary found-footage film. Is there one where a family puts up security cameras after a break-in and accidentally catches a demon attacking them?,0.0237,0.2766,0.3528,315.0,38.6619,0.8976,0.8,11.9
+20,"In the movie 'Forrest Gump', what are some of the specific major 20th-century historical events or famous figures that Forrest accidentally influences or meets?",0.0717,0.2092,0.4822,470.8333,42.3719,0.8585,0.6,28.18
+21,"What is a good movie about a young person moving to a new city, learning independence, and eventually finding their place?",0.0676,0.1781,0.3802,423.2558,34.8658,0.8687,0.6,12.0
+22,What movie is about Jean Valjean being pursued by Inspector Javert?,0.111,0.3729,0.529,284.6154,52.5398,0.8873,1.0,17.0
+23,"What is a good action movie involving espionage, high-stakes poker, and a skilled agent navigating dangerous situations?",0.0263,0.1871,0.3375,183.7209,39.058,0.8666,0.6,36.0
+24,What movie is about Michael Jordan teaming up with cartoon characters to play basketball?,0.1023,0.2449,0.6421,300.0,47.8746,0.8827,0.4,10.0
+25,What is a horror movie about a group of friends in a remote cabin where things go terribly wrong?,0.0705,0.2034,0.2707,165.0,39.3889,0.8755,0.6,16.0
+26,What is a classic slasher movie set at a camp where a masked killer stalks victims?,0.1864,0.3259,0.3617,143.75,43.9496,0.8969,0.2,15.0
+27,"What is a stylish crime movie involving a wealthy mastermind, art theft, and a cat-and-mouse romance?",0.0192,0.2456,0.3776,395.2381,31.848,0.8779,0.2,10.0
+28,What’s the movie about a girl who wants to play soccer but her traditional family doesn’t approve?,0.008,0.1692,0.2459,450.0,24.5788,0.8719,0.6,16.0
+29,What’s the movie about FBI agents investigating the disappearance of civil rights activists in the South?,0.0333,0.1375,0.276,377.4194,30.0566,0.8708,0.2,20.0
+30,What is a sci-fi thriller about scientists trying to contain a deadly extraterrestrial organism?,0.0257,0.1852,0.3415,167.5676,36.8621,0.895,0.2,8.0
