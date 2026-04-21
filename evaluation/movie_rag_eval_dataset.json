@@ -13,7 +13,7 @@
     "references": [
       "At the end of Jaws: The Revenge, the shark is killed and the surviving characters make it safely back to land.",
       "The finale ends with the shark destroyed, Jake surviving, and Ellen being flown back to Amity Island.",
-      "The movie ends after the shark is defeated and Ellen, Michael, Jake, and the others survive the ordeal."
+      "In 'Jaws: The Revenge,' the ending features a dramatic confrontation where Ellen Brody impales the shark, leading to its explosive demise."
     ],
     "generated": "At the end of Jaws: The Revenge, the shark is destroyed when it is hit by an\nexplosion caused by an electrical impulse-powered explosive. The survivors,\nwhich include Michael, Jake, and Ellen, make it back to land. Hoagie flies Ellen\nback to Amity Island, concluding the film."
   },
@@ -40,7 +40,7 @@
     "references": [
       "Mike and Marcus are best friends and police partners in the narcotics division.",
       "In Bad Boys, Mike Lowrey and Marcus Burnett are close friends who work together as detectives.",
-      "They are partner detectives and loyal friends who work together to solve crimes."
+      "In the Bad Boys, Mike Lowrey and Marcus Burnett are two main protagonists who share a strong bond as partners in the Miami Police Department."
     ],
     "generated": "In the movie \"Bad Boys,\" Mike and Marcus are best friends and partners who are\ndetectives in the narcotics division of the Miami-Dade Police Department. They\nhave a close platonic relationship, working closely together to solve cases and\nprotect each other. Throughout the movie, they are seen to be reliable partners\nand friends that are willing to risk their lives for each other. The movie does\nnot suggest any romantic relationship between them."
   },
@@ -58,7 +58,7 @@
     "references": [
       "The movie is Zoolander.",
       "Zoolander is the film about a fashion-world brainwashing conspiracy.",
-      "The movie involving a fashion-related brainwashing plot is Zoolander."
+      "A good fit is The Devil Wears Prada. A young journalist, Andy Sachs, is recruited by the ruthless and demanding fashion editor Miranda Priestly to work at Runway magazine, where she is subjected to a high-pressure, brainwashing-like environment centered around fashion and power."
     ],
     "generated": "Based on the context provided, the movie that involves a group trying to stop a\nfashion-related brainwashing plot is \"White Chicks\". In this movie, the\ncharacters Marcus/Tiffany and Kevin/Brittany are trying to prevent a fashion\nshow from being manipulated by the characters Megan and Heather. However, the\nplot summary mentions a chaotic fashion show where the real Tiffany and Brittany\narrive, and it's unclear if the initial brainwashing plot is successfully\nstopped. For more precise details, I would recommend watching the movie or\nreading a full plot summary."
   },
@@ -66,7 +66,7 @@
     "query": "Which movie involves a boxer rising from nothing?",
     "references": [
       "A fitting answer is Rocky, which follows an underdog boxer rising from obscurity.",
-      "Rocky is a movie about a struggling boxer who gets a chance to prove himself and rise above his circumstances.",
+      "The Fight is atrue story of Micky Ward, a working-class boxer from Boston who overcomes immense personal and financial struggles to become a champion with the help of his family.",
       "One classic example is Rocky, the story of an unknown boxer fighting his way toward success."
     ],
     "generated": "The movie \"The Hammer\" (Wiki ID: 6089288) involves a boxer rising from nothing.\nJerry Ferro is a carpenter and boxing instructor who, despite being older and\nout-of-shape, is noticed by a coach and given a chance to qualify for the\nOlympic Games. He goes into serious training and, motivated by his\ndetermination, he manages to advance in the competition."
@@ -92,7 +92,7 @@
   {
     "query": "I'm hosting a family-friendly Halloween party and need an animated movie that's a little spooky but sweet. Maybe something involving a misunderstanding with the undead or ghosts. Any recommendations?",
     "references": [
-      "A great recommendation is The Nightmare Before Christmas, an animated movie that is spooky, sweet, and family-friendly.",
+      "A great recommendation is Coraline, which is about a young girl discovers a parallel world behind a door in her new home, where the inhabitants are eerily cheerful but sinister, blending spooky and whimsical elements.",
       "You might enjoy The Nightmare Before Christmas, which mixes Halloween imagery with a warm and playful tone.",
       "A good pick is The Nightmare Before Christmas, a charming animated film with ghosts, monsters, and a gentle spooky feel."
     ],
@@ -111,7 +111,7 @@
     "query": "I'm looking for a fun, upbeat musical movie for a middle school sleepover. Something about a summer camp for singing where a regular girl meets a famous pop star would be perfect.",
     "references": [
       "Camp Rock is a fun musical about a regular girl attending a music camp and meeting a famous pop star.",
-      "A good choice is Camp Rock, which follows Mitchie at a singing camp where she meets teen idol Shane Gray.",
+      "A good choice is High School musical, it follows a high school student who discovers her passion for singing and performs with a popular athlete-turned-singer.",
       "The movie is Camp Rock, an upbeat musical about a girl chasing her dreams at music camp and crossing paths with a celebrity singer."
     ],
     "generated": "Based on the context provided, the movie that best fits your description for a fun, upbeat musical movie for a middle school sleepover is \"Camp Rock\". It features a summer camp for singing, a regular girl named Mitchie Torres who meets a famous pop star named Shane Gray, and has a mix of both drama and music. The plot revolves around Mitchie's journey to follow her dream of becoming a professional singer while dealing with the challenges of meeting and falling for a famous pop star. The movie has a positive message and an upbeat tone, making it suitable for a sleepover setting."
@@ -147,7 +147,7 @@
     "query": "My friends and I want to turn our brains off and watch a completely ridiculous comedy about guys trying to retrace their steps and find their lost vehicle after a wild party. What should we watch?",
     "references": [
       "You should watch Dude, Where's My Car?, a ridiculous comedy about friends trying to find their missing car after a wild night.",
-      "A perfect match is Dude, Where's My Car?, which follows two guys retracing their steps after losing their car.",
+      "A perfect match is The Hangerover. A bachelor party spirals out of control after the groom disappears overnight, leading to a frantic search for him and a series of bizarre discoveries in Vegas.",
       "The movie is Dude, Where's My Car?, a goofy comedy about a missing vehicle and a chaotic night."
     ],
     "generated": "Based on the context provided, it seems that the movie \"The Hangover\" fits your description best. The plot revolves around a bachelor party in Las Vegas that results in the main characters losing their memories and their vehicle, and they spend the movie trying to retrace their steps and find their lost vehicle. It's a comedy with a lot of absurd situations and humor, which should provide a fun and ridiculous watch for you and your friends."
@@ -183,8 +183,8 @@
     "query": "What is a good movie about a young person moving to a new city, learning independence, and eventually finding their place?",
     "references": [
       "A good answer is My Name Is Juani, about a young woman moving to Madrid and trying to build an independent life.",
-      "My Name Is Juani fits this idea, following a young woman who leaves home for the city and grows through hardship and self-discovery.",
-      "One suitable movie is My Name Is Juani, which centers on a young person moving to a city, seeking independence, and finding her own path."
+      "A good answer is The Narrows, where Mike, a young man from Brooklyn, moves to New York University and struggles to balance his old life with his new one. It’s a fitting example of someone seeking independence and adapting to a new environment.",
+      "A great answer is Kiki’s Delivery Service, about a young witch who moves to a new city to start her life and learn independence. The movie beautifully captures the journey of finding one's place while gaining self-reliance."
     ],
     "generated": "Based on the context provided, a movie that fits the description of a young\nperson moving to a new city, learning independence, and eventually finding their\nplace is \"A Resident of the City\" (Wiki ID: 35171753). In this movie, Juani\nleaves her poor suburban village in Spain to find a better life in Madrid.\nHowever, the ruthlessness of the city shatters her naive dreams, but she\neventually realizes the importance of not giving up on her dreams and returns to\nMadrid with less naive expectations.  Another movie that could be mentioned is\n\"My Name Is Juani\" (Wiki ID: 14661434), where Juani experiences similar\nstruggles as she tries to find her place in Madrid, but the plot summary\nprovided doesn't include as much detail about her eventually finding her place\nin the city.  Lastly, \"The Narrows\" (Wiki ID: 11018205) could also be\nconsidered, as the protagonist Mike Manadoro moves from a tight-knit Italian\nneighborhood in Brooklyn to New York University, where he struggles to balance\nhis roots with his new environment, ultimately making difficult choices that\nchange the course of his life. While not specifically a new city, the story\nstill involves a young person finding their place amidst a new environment."
   },
@@ -200,11 +200,11 @@
   {
     "query": "What is a good action movie involving espionage, high-stakes poker, and a skilled agent navigating dangerous situations?",
     "references": [
-      "Casino Royale is a great action movie involving espionage, poker, and a skilled secret agent.",
-      "A perfect answer is Casino Royale, where James Bond enters a high-stakes poker game during a dangerous spy mission.",
-      "The movie is Casino Royale, an espionage thriller centered on Bond, international intrigue, and a tense poker showdown."
+      "Casino Royale is a good fit for a movie involving espionage, high-stakes poker, and a skilled agent navigating dangerous situations. James Bond must defeat the financier Le Chiffre in a high-stakes poker game while facing betrayal and deadly enemies in this action-packed thriller..",
+      "Spy Game is a good fit for espionage and high-stakes situations, as CIA operative Nathan Muir works to rescue a younger agent, Tom Bishop.",
+      "The Bourne Identity is a good fit for espionage and dangerous situations, following Jason Bourne, an amnesiac agent trying to uncover his true identity. He faces relentless enemies and high-stakes scenarios while relying on his skills to survive."
     ],
-    "generated": "Based on the context provided, the movie that best fits the description of a\npowerful movie about struggle, redemption, and surviving harsh societal\nconditions is 'Six Million and One'. This movie is about a family seeking\nmeaning in their personal and family histories as they explore the dark depths\nof an Austrian forced labor camp during the Holocaust. The plot summary suggests\nthemes of struggle, survival, and redemption as the characters grapple with\ntheir past and find a sense of intimacy and healing in the process."
+    "generated": "Based on the context provided, a movie that fits your description is 'Spy Game' (Wiki ID: 289591, Released Date: 2001-11-19). This movie involves espionage, as it is about a CIA agent trying to rescue another agent who is in trouble. It also features high-stakes poker, as the main character recruited the other agent when he was a U.S. Marine scout sniper during the Vietnam War and they played poker during their time in Berlin, Germany. The movie is filled with dangerous situations that the agent navigates throughout the plot."
   },
   {
     "query": "What movie is about Michael Jordan teaming up with cartoon characters to play basketball?",
@@ -219,8 +219,8 @@
     "query": "What is a horror movie about a group of friends in a remote cabin where things go terribly wrong?",
     "references": [
       "The Evil Dead is a classic horror movie about friends at a remote cabin where horrifying events unfold.",
-      "A strong answer is The Evil Dead, in which a group of friends awaken evil forces in a cabin in the woods.",
-      "The movie is The Evil Dead, about friends staying in an isolated cabin and encountering supernatural terror."
+      "A classic example is Cabin Fever, recent college grads head to a mountain cabin for October break. But when one of them contracts a flesh-eating disease after coming in contact with a dying stranger, their getaway spirals into a gruesome fight for survival.",
+      "A great option is Cabin in the Woods (2012), directed by Drew Goddard. It takes the familiar 'group of friends in a remote cabin' setup but with a twist, blending traditional horror with meta-commentary on the genre. It has a unique take on what happens when the friends start encountering creepy supernatural forces, leading to an unexpected and thrilling conclusion."
     ],
     "generated": "The horror movie that fits the description is 'Cabin Fever', as it is about a\ngroup of friends who go to a remote cabin in the woods for a vacation, but they\nencounter a disfigured and bloody hermit who infects one of them, causing a\ndeadly outbreak among the group. Another movie that somewhat fits the\ndescription is 'The Cabin in the Woods', where a group of friends visit a remote\ncabin and are manipulated by mysterious forces, leading to a zombie attack by a\nfamily of the deceased. However, in 'The Cabin in the Woods', the cabin is not\nin a forest, but rather in a facility that controls the environment and\nmanipulates the group."
   },
@@ -228,8 +228,8 @@
     "query": "What is a classic slasher movie set at a camp where a masked killer stalks victims?",
     "references": [
       "Friday the 13th is the classic camp slasher about a killer stalking victims.",
-      "A classic example is Friday the 13th, set around Camp Crystal Lake with a masked killer.",
-      "The movie is Friday the 13th, a famous slasher centered on murders at a summer camp."
+      "A classic slasher movie set at a camp where a masked killer stalks victims is 'Sleepaway Camp'. Released in 1983, it follows a group of teenagers at a summer camp where they encounter a series of gruesome murders, with the killer remaining largely unseen until the very end.",
+      "The movie is Halloween. A masked killer, Michael Myers, escapes from a mental institution and returns to his hometown to stalk and murder teenagers at their summer camp."
     ],
     "generated": "The classic slasher movie set at a camp where a masked killer stalks victims is\n'Camp Blood'. The movie is titled 'Camp Blood' and its Wiki ID is 5638171. The\nplot summary indicates that the movie revolves around a guide and a tourist\nbeing brutally murdered by a masked killer, with the story then focusing on four\ncampers who are stalked and murdered by the same killer. The movie is also known\nas 'Camp Blackwood', but it is referred to as 'Camp Blood' in the plot summary."
   },
@@ -256,16 +256,16 @@
     "references": [
       "The movie is Mississippi Burning.",
       "That plot describes Mississippi Burning, about FBI agents investigating missing civil rights workers in the South.",
-      "The film is Mississippi Burning, which follows federal agents investigating the disappearance of civil rights activists."
+      "The film is Ghosts of Mississippi. A former Mississippi prosecutor (played by Alan Rickman) is haunted by the unsolved murder of civil rights leader Medgar Evers and seeks justice decades later."
     ],
     "generated": "The movie you are referring to is \"Mississippi Burning\", with a Wiki ID of\n129410 and released in 1988. The story is loosely based on the real-life murders\nof civil rights workers in Mississippi in 1964. Two FBI agents are sent to\ninvestigate the incident in rural Jessup County, Mississippi, and take different\napproaches to the investigation. Agent Alan Ward, a young liberal northerner,\ntakes a direct approach, while Agent Rupert Anderson, a former Mississippi\nsheriff, takes a more subtle approach. However, both agents face challenges as\nthe local sheriff's office is linked to the Ku Klux Klan, and the agents cannot\ntalk to the local black community due to their fear of Klan retaliation. The\nmovie depicts the struggles the agents face while investigating the case."
   },
   {
     "query": "What is a sci-fi thriller about scientists trying to contain a deadly extraterrestrial organism?",
     "references": [
-      "The Andromeda Strain is a sci-fi thriller about scientists trying to contain a deadly extraterrestrial organism.",
+      "In The Thing, A group of researchers in Antarctica discover an extraterrestrial organism that assimilates and mimics other life forms, forcing them to contain and destroy it before it spreads.",
       "A strong match is The Andromeda Strain, which follows scientists confronting a lethal alien microorganism.",
-      "The movie is The Andromeda Strain, centered on experts attempting to stop a dangerous extraterrestrial biological threat."
+      "Alien is a good film that matches. A crew aboard the spaceship *Nostromo* encounters a deadly extraterrestrial organism that attacks and kills crew members, forcing them to contain and destroy it before it spreads throughout the ship"
     ],
     "generated": "The movie that fits the description is \"The Andromeda Strain\". It is a sci-fi\nthriller about scientists trying to contain a deadly organism, which they\ninitially believe to have extraterrestrial origins. The plot revolves around a\nmicroorganism that coagulates the blood in the body, causing rapid death or\nextreme violence and insanity in survivors. The team of scientists works to find\na cure and prevent the organism from spreading further."
   }
