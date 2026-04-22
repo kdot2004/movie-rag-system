@@ -9,3 +9,6 @@ CMU_source/
 archive/
 data/
 testing_docs/
+merged_movie_rag.csv
+movie_rag_chunks.csv
+movie_titles.txt
