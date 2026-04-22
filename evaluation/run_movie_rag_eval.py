@@ -5,7 +5,7 @@ from nltk.translate.bleu_score import corpus_bleu, sentence_bleu, SmoothingFunct
 from nltk.translate.meteor_score import meteor_score
 from rouge_score import rouge_scorer
 import sacrebleu
-
+import pandas as pd
 
 
 # Optional: pip install bert-score
@@ -112,7 +112,7 @@ if best_bert_f1 is not None:
 else:
     print("Avg BERTScore F1: skipped (install bert-score)")
 
-print("\n=== Per-query snapshot ===")
+rows = []
 for i, item in enumerate(data, start=1):
     row = {
         "idx": i,
@@ -125,4 +125,11 @@ for i, item in enumerate(data, start=1):
     }
     if best_bert_f1 is not None:
         row["bertscore_f1"] = round(best_bert_f1[i-1], 4)
-    print(row)
+    rows.append(row)
+# Convert to DataFrame
+df = pd.DataFrame(rows)
+
+# Save to CSV
+df.to_csv("movie_rag_eval_results.csv", index=False)
+
+print("CSV saved!")
