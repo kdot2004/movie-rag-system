@@ -117,13 +117,11 @@ This regex finds wiki links that contain a pipe, such as `[[Tom_and_Jerry|Tom an
 - `\]\]` --> matches the closing wiki brackets `]]`
 - `r"\2"` --> replaces the full match with capture group 2, which is the text after the pipe
 
-Example:
+For example:
+- `The film follows [[Tom_and_Jerry|Tom and Jerry]] as they cause chaos in a hotel while [[Kayla Forester|Kayla]] tries to keep her job.`
 
-Before:
-- The film follows [[Tom_and_Jerry|Tom and Jerry]] as they cause chaos in a hotel while [[Kayla Forester|Kayla]] tries to keep her job.
-
-After:
-- The film follows Tom and Jerry as they cause chaos in a hotel while Kayla tries to keep her job.
+Turns into:
+- `The film follows Tom and Jerry as they cause chaos in a hotel while Kayla tries to keep her job.`
 
 `re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)`
 
@@ -136,11 +134,11 @@ Matches simple wiki links such as `[[Titanic]]`, where there is no pipe and the 
 - `\]\]` --> matches the closing wiki brackets `]]`
 - `r"\1"` --> replaces the full match with capture group 1, which is the text inside the brackets
 
-Before:
-- The plot follows [[Titanic]] as it depicts the romance between [[Jack Dawson]] and [[Rose DeWitt Bukater]] during the ship's doomed voyage.
+For example:
+- `The plot follows [[Titanic]] as it depicts the romance between [[Jack Dawson]] and [[Rose DeWitt Bukater]] during the ship's doomed voyage.`
 
-After:
-- The plot follows Titanic as it depicts the romance between Jack Dawson and Rose DeWitt Bukater during the ship's doomed voyage.
+Turns into:
+- `The plot follows Titanic as it depicts the romance between Jack Dawson and Rose DeWitt Bukater during the ship's doomed voyage.`
 
 ---
 
