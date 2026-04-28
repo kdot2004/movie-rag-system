@@ -5,6 +5,7 @@ We found many instances of html entities throughout our plot summaries and we di
 
 Example:
 - "Chester staggers to a piano and plays Narcissa's ballad ``&mdash;`` the saddest music in the world ``&mdash;`` as he burns in the fire." 
+
 Results:
 - "Chester staggers to a piano and plays Narcissa's ballad — the saddest music in the world — as he burns in the fire."
 
