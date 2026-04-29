@@ -64,7 +64,7 @@ Overall these regex were used to removed `<ref>...<ref>` and `<ref....>`.
 ---
 
 ### HTML tags
-`r"<[^>]+>"`
+`re.sub(r"<[^>]+>", " ", text)`
 
 This regex is used for removing HTML tags such as `<span>`, `<div>`, and similar markup.
 
