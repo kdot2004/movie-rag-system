@@ -156,7 +156,7 @@ Removes extra white spaces in text.
 ### Remove URLs
 `re.sub(r"http\S+|www\.\S+", " ", text)`
 
-Removes URLs that start with `http` or `www`.
+Removes URLs that start with `http` or `www.`
 
 - `r""` --> raw string 
 - `htpp` --> match `http`
