@@ -30,13 +30,7 @@ Designed for movie fans, students, and developers seeking accurate, data-grounde
 
 ## 📸 Demo
 ![Movie RAG Query Demo 1](assets/query1.gif)
-### Query Example 2
-![Movie RAG Query Demo 2](assets/query2.gif)
-
-### Search bar Functionality
 ![Movie RAG Query Demo 3](assets/query3.gif)
-
-### YouTube Link
 [Movie RAG YT Link](https://youtu.be/107usbwWhow?si=lm6dqRxsn1LxVp0t)
 
 ---
