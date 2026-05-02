@@ -43,7 +43,13 @@ Designed for movie fans, students, and developers seeking accurate, data-grounde
 👉 [Watch on YouTube](https://youtu.be/107usbwWhow?si=lm6dqRxsn1LxVp0t)
 
 ### 💬 Example Usage
+
+#### Interactive Chat
+
 ![Query Demo ](assets/query1.gif)
+
+#### Movie Search Bar
+
 ![Search Demo](assets/query3.gif)
 
 ---
