@@ -187,7 +187,7 @@ This data was collected by David Bamman, Brendan O'Connor, and Noah Smith at the
   - recommendation
 
 - Each query evaluated against:
-  - 3 reference answers (Google, ChatGPT, AI Movie Finder)
+  - 3 reference answers (Google, ChatGPT, AI Movie Finder: https://www.aimoviefinder.com/)
 
 ### Evaluation Table
 
