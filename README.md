@@ -46,24 +46,29 @@ The system follows a standard RAG pipeline:
 ## 📁 Project Structure
 ```
 movie-rag-system/
-├── app/
-│   └── movie_rag_app.py
+├── app_demo/
+│   ├── build_movie_names_vectordb.py
+│   ├── movie_rag_app.py
+│   ├── movie_rag_pipeline.py
+│   ├── run_movie_rag_streamlit_app.ipynb
 ├── data/
-│   ├── raw/
-│   ├── cleaned/
-│   └── processed/
-├── notebooks/
-│   └── data_cleaning.ipynb
-├── src/
-│   ├── chunking.py
-│   ├── embeddings.py
-│   ├── retrieval.py
-│   └── generation.py
+│   ├── movie_rag_eval_dataset.json
+│   ├── movie_rag_evaluation.csv
 ├── evaluation/
-│   ├── test_queries.json
-│   └── evaluate.py
-├── requirements.txt
-└── README.md
+│   ├── evaluate_mistral_responses.ipynb
+│   ├── evaluation_explanations.md
+│   ├── evaluation_summary.md
+│   ├── run_movie_rag_eval.py
+│   ├── testing.md
+├── notebooks/
+│   ├── build_movie_chunks_vectordb.ipynb
+│   ├── chunk_movie_data.ipynb
+│   ├── movie_rag_testing.ipynb
+│   ├── plot_cleaning_breakdown.md
+│   ├── notebooks/prepare_movie_data.ipynb
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ---
