@@ -64,6 +64,9 @@ movie-rag-system/
 │   └── evaluate.py
 ├── requirements.txt
 └── README.md
+```
+
+---
 
 ## 📊 Data Sources
 
