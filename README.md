@@ -59,7 +59,7 @@ Designed for movie fans, students, and developers seeking accurate, data-grounde
 ### ⚡ Quick Demo (Recommended)
 Run the app directly in Google Colab:
 
-1. Open `run_movie_rag_streamlit_app.ipynb`
+1. Open `app_demo/run_movie_rag_streamlit_app.ipynb`
 2. Install dependencies:
 ```
 python
