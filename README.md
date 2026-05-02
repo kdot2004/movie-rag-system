@@ -1,5 +1,5 @@
 # 🎬 **Movie RAG System** 🎥
-![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![LLM](https://img.shields.io/badge/LLM-Mistral--7B-green)
 > 🚀 A Retrieval-Augmented Generation system for intelligent movie search and discovery.
