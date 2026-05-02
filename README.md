@@ -3,6 +3,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![LLM](https://img.shields.io/badge/LLM-Mistral--7B-green)
 > 🚀 A Retrieval-Augmented Generation system for intelligent movie search and discovery.
+
 > 🔍 Ask anything about movies — get accurate, data-grounded answers powered by RAG + LLMs.
 
 ---
