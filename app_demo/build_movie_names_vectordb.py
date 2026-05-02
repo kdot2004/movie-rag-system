@@ -12,9 +12,9 @@ NOTE:
 Both `movie_titles.txt` and `movie_title_embeddings.npy` are required to run
 this script and the `movie_rag_app.py`.
 
-- `movie_titles.txt` is available on GitHub.
-- `movie_title_embeddings.npy` is not included in the repository due to its size.
-  Please request this file separately before running the script.
+Run `get_movie_names_embeddings.py` to get both:
+- `movie_titles.txt`
+- `movie_title_embeddings.npy`
 
 Before running:
 1. Install all required project dependencies.
