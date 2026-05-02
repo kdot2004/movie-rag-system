@@ -3,9 +3,6 @@ This script implements the RAG pipeline to answer user queries
 about movies based on context retrieved from the Chroma vector database.
 This script will serve as the foundation of the movie_rag_app Streamlit app.
 
-Ensure all dependencies are installed by running:
-  pip install -r requirements.txt
-
 Pipeline Overview:
 ------------------
 The pipeline includes the following key components:
@@ -14,6 +11,7 @@ The pipeline includes the following key components:
    - ChromaDB: Stores and queries embedded documents.
    - SentenceTransformers: Generates embeddings for queries and documents.
    - Hugging Face Transformers: Utilized for loading and using a language model (Mistral-7B-Instruct-v0.3 in this script).
+   - NOTE: Each dependencie is cache using streamlit: https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_resource
 
 2. Main Functions:
    - Functions to load models and tokenizers, generate query embeddings, retrieve documents from ChromaDB, 
@@ -33,11 +31,10 @@ Here are some sample test queries to validate the pipeline's functionality:
 2. What is the plot of The Hunger Games?
 3. Who are the main characters of The Incredibles?
 
-Notes:
+NOTE:
 ------
 - This pipeline is designed for GPU inference using Mistral-7B with 4-bit quantization.
-- Ensure that PyTorch is installed with CUDA support (torch version compiled with CUDA).
-- Use a CUDA-enabled NVIDIA GPU with sufficient VRAM (e.g., T4, V100, A100).
+- Ensure to store in Google Drive in order to run: `run_movie_streamlit_app.ipynb`
 """
 
 
@@ -50,8 +47,7 @@ import textwrap # Answer generation
 import streamlit as st # streamlit app
 
 # Functions to load dependencies
-@st.cache_resource # https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_resource
-# https://docs.kanaries.net/topics/Streamlit/streamlit-caching
+@st.cache_resource
 def load_chromadb(file_path, collection_name):
     """
     Loads and initializes Chroma DB collection.
