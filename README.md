@@ -1,17 +1,93 @@
-# 🎬 Movie RAG System
+# 🎬 **Movie RAG System** 🎥
 > 🚀 A Retrieval-Augmented Generation system for intelligent movie search and discovery.
 
 ---
 
-## 📌 Overview
-This project implements a Retrieval-Augmented Generation (RAG) system designed to answer movie-related questions. 
+## Table of Contents 
+- [Overview](#-overview)
+- [Demo](#-demo)
+- [Installation](#-installation)
+- [Usage](#️-usage)
+- [Features](#-features)
+- [How It Works](#-how-it-works)
+- [Project Structure](#-project-structure)
+- [Data Sources](#-data-sources)
 
-The system combines information retrieval from an external dataset with LLM-based response generation, ensuring that outputs are grounded in real data. The goal was to build a system capable of answering various queries types, including plot-based questions, actor and character inquiries, metadata lookups, and recommendation-style prompts.
+---
+
+## 📌 Overview
+This project implements a Retrieval-Augmented Generation (RAG) system for answering movie-related questions.
+
+It supports multiple query types, including:
+- plot-based questions 
+- actor and character lookups 
+- metadata retrieval
+- recommendation-style queries
+
+Designed for movie fans, students, and developers seeking accurate, data-grounded film insights.
 
 ---
 
 ## 📸 Demo
-[Youtube Link](https://youtu.be/107usbwWhow?si=lm6dqRxsn1LxVp0t)
+![Movie RAG Query Demo 1](assets/query1.gif)
+### Query Example 2
+![Movie RAG Query Demo 2](assets/query2.gif)
+
+### Search bar Functionality
+![Movie RAG Query Demo 3](assets/query3.gif)
+
+### YouTube Link
+[Movie RAG YT Link](https://youtu.be/107usbwWhow?si=lm6dqRxsn1LxVp0t)
+
+---
+
+## 📦 Installation
+This project was run using Google Colab rather than a local Python environment. 
+Because of this, a separate `requirements.txt` file was not included. 
+All required libraries are installed directly inside the Colab notebook before the Streamlit app is launched.
+
+The main setup steps include:
+
+```
+python
+!pip install streamlit pyngrok chromadb sentence-transformers transformers accelerate bitsandbytes
+```
+
+---
+
+## 🛠️ Usage
+1. Store CMU data files locally 
+- [Data Sources](#-data-sources)
+   - `character.metadata.tsv`
+   - `movie.metadata.tsv`
+   - `plot_summaries.txt`
+2. Run Data Preprocessing notebooks/scripts
+- `prepare_movie_data.ipynb`
+- `chunk_movie_data.ipynb`
+- `build_movie_chunks_vectodb.ipynb`
+- `get_movie_names_embeddings.py`
+- `build_movie_names_vector_db.py`
+3. Ensure Chroma collections are created and saved in Google Drive
+4. Run Streamlit app
+- Ensure the following are in Google Drive or uploaded into the Colab Notebook:
+   - `movie_rag_pipeline.py`
+   - `movie_rag_app.py`
+- Get Ngrok **Authtoken**
+   - Ngrok is free and a profile can be easily created using your Github Account
+   - https://ngrok.com/docs/start
+- Run:
+   - `run_movie_rag_streamlit_app.ipynb`
+
+---
+
+## ✨ Features
+- Interactive Chatbot 🤖
+![Movie RAG Query Demo 2](assets/query2.gif)
+- Side Search Bar
+   - Finds movies in database
+![Movie RAG Query Demo 3](assets/query3.gif)
+- Clean UI with dark mode
+- Public URL
 
 ---
 
@@ -26,20 +102,21 @@ The system follows a standard RAG pipeline:
    - Plot summaries are split using a sentence-based chunking strategy  
 
 3. **Embedding**
-   - Text chunks are converted into vector representations using a sentence transformer model: **all-mpnet-base-v2**
+   - Text chunks are converted into emeddings using: 
+      - Sentence Transformers **all-mpnet-base-v2** model
 
 4. **Vector Storage**
-   - Embeddings are stored in a ChromaDB vector database  
+   - Embeddings are stored in a **ChromaDB** vector database  
 
 5. **Retrieval**
    - Relevant chunks are retrieved based on user query similarity  
 
 6. **Generation**
-   - Mistral-7B-Instruct model generates responses using retrieved context  
+   - **Mistral-7B-Instruct** model generates responses using retrieved context  
 
 7. **App Deployment**
-    - The application is developed using Streamlit and executed in a Google Colab environment to leverage GPU resources.
-    - Ngrok is used to create a secure public tunnel to the locally running Streamlit server.
+    - Streamlit app run in Google Colab to leverage GPU resources for inference
+    - Ngrok is used to create a secure public tunnel to the locally running Streamlit server
 
 ---
 
@@ -48,9 +125,14 @@ The system follows a standard RAG pipeline:
 movie-rag-system/
 ├── app_demo/
 │   ├── build_movie_names_vectordb.py
+│   ├── get_movie_names_embeddings.py
 │   ├── movie_rag_app.py
 │   ├── movie_rag_pipeline.py
 │   ├── run_movie_rag_streamlit_app.ipynb
+├── assets/
+│   ├── query1.gif
+│   ├── query2.gif
+│   ├── query3.gif
 ├── data/
 │   ├── movie_rag_eval_dataset.json
 │   ├── movie_rag_evaluation.csv
@@ -65,10 +147,9 @@ movie-rag-system/
 │   ├── chunk_movie_data.ipynb
 │   ├── movie_rag_testing.ipynb
 │   ├── plot_cleaning_breakdown.md
-│   ├── notebooks/prepare_movie_data.ipynb
+│   ├── prepare_movie_data.ipynb
 ├── .gitignore
 ├── README.md
-└── requirements.txt
 ```
 
 ---
