@@ -1,7 +1,7 @@
 """
 Movie RAG App via streamlit.
 
-This script creates a UI for the Movie RAG Pipeline.
+This script creates the app for the Movie RAG Pipeline.
 Users can type in several types of search queries.
 
 The system expects plot, metadata, and character/actor
@@ -12,31 +12,31 @@ This app is accompanied with a feature that allows users
 to search for all the movies within the database. 
 Asking questions of movies outside the database is unadvised.
 
-Dependencies
+Dependencies:
 ------------
 1. movie_rag_pipeline.py:
-    - Ensure the file is under
-    the same directory as the
-    chroma collection and this
-    app.
 2. chromadb collections:
     - movie_chunks
     - movie_titles: 
-        - run `movie_name_vectordb.py`
+        - run:
+            - `get_movie_names_embeddings.py` 
+            - `movie_name_vectordb.py`
         - ensure movie_titles.txt
         and movie_title_embeddings.npy
-        are under the same dir as the 
+        are in the same dir as the 
         chroma collection.
-3. Nvida GPUs
+NOTE:
+- Ensure to save either in Google Drive
+- Or upload to the Colab Notebook: `run_movie_streamlit_app.ipynb`
+- See `run_movie_streamlit_app.ipynb` to actaully run.
 
-**Note**
-See requirements.txt to see what to install to run both this app
-and the movie_rag_pipeline.
-Run: pip install -r requirements.txt
-
-Lastly note that certain feature are commented out. If you have the
-approriate setup then feel free to comment out the llm/tokenizer as
-well as the rag pipeline/answer under the try clause. 
+References:
+-----------
+- https://mahapatra-preetam.medium.com/building-a-conversational-ai-with-memory-in-streamlit-using-langgraph-langchain-asyncio-and-96841a038fb5
+- https://docs.streamlit.io/develop/api-reference/layout/st.sidebar
+- https://docs.streamlit.io/develop/api-reference/widgets/st.slider
+- https://docs.streamlit.io/develop/api-reference/execution-flow/st.form
+- https://docs.streamlit.io/develop/api-reference/chat/st.chat_input
 
 Enjoy!
 """
@@ -56,7 +56,7 @@ from movie_rag_pipeline import (
     find_movies,
 ) # Loading models + vector store + pipeline
 
-# Set page configuration https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+# Set page configuration
 st.set_page_config(page_title="Movie RAG", page_icon="🎬", layout="wide")
 
 
@@ -75,14 +75,12 @@ def get_llm():
             st.session_state.mistral = mistral
     return st.session_state.tokenizer, st.session_state.mistral
 
-# Create UI
 
 # Title
 st.title("🎬🎥 Movie RAG System 🍿🎟️ ")
 st.caption("Note: the first question may take longer because the language model loads on first use.")
 
 # Set up chat history
-# https://mahapatra-preetam.medium.com/building-a-conversational-ai-with-memory-in-streamlit-using-langgraph-langchain-asyncio-and-96841a038fb5
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -96,12 +94,11 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# Create side search bar
-# https://docs.streamlit.io/develop/api-reference/layout/st.sidebar
+# Movie Finder Search Bar Interface
 with st.sidebar:
     st.sidebar.title("🚨 Movies Avaliable in Database 🚨")
     title_query = st.text_input("Search for a movie title:")
-    num_movies = st.slider("How many movies to retrieve?", 1, 10) # https://docs.streamlit.io/develop/api-reference/widgets/st.slider
+    num_movies = st.slider("How many movies to retrieve?", 1, 10)
     if st.button("Find Movie"): 
         if title_query:
             st.write(f"Results for \"{title_query}\" in Database:")
@@ -109,11 +106,10 @@ with st.sidebar:
             for i, movie in enumerate(retrieved_movies, start=1):
                 st.write(f"{i}. {movie}")
 
-# https://docs.streamlit.io/develop/api-reference/execution-flow/st.form
+# Chat Interface
 with st.form("qa_form"):
-    query = st.text_input("Enter your query:") # Chat Interface: https://docs.streamlit.io/develop/api-reference/chat/st.chat_input
+    query = st.text_input("Enter your query:")
     ask_submit = st.form_submit_button("Get Answer")
-
 
 if ask_submit:
     if query:
