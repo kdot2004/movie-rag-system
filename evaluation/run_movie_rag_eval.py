@@ -1,3 +1,4 @@
+# Imports
 import json
 import numpy as np
 import nltk
@@ -7,20 +8,21 @@ from rouge_score import rouge_scorer
 import sacrebleu
 import pandas as pd
 
-
-# Optional: pip install bert-score
 try:
     from bert_score import score as bertscore_score
     HAS_BERTSCORE = True
 except Exception:
     HAS_BERTSCORE = False
 
+# Set up data path
 DATA_PATH = "movie_rag_eval_dataset.json"
 
+# Download nltk modules
 nltk.download("punkt", quiet=True)
 nltk.download("wordnet", quiet=True)
 nltk.download("omw-1.4", quiet=True)
 
+# Load json
 with open(DATA_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
     
@@ -28,10 +30,11 @@ with open(DATA_PATH, "r", encoding="utf-8") as f:
 def clean_text(text):
     return text.replace("\n", " ").strip()
 
+# Define smooth
 smooth = SmoothingFunction().method1
 
 # -------------------------
-# BLEU prep
+# BLEU
 # -------------------------
 bleu_references = [
     [nltk.word_tokenize(ref) for ref in item["references"]]
