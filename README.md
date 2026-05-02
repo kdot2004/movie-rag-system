@@ -80,8 +80,6 @@ python
 - Side Search Bar
    - Finds movies in database
 ![Movie RAG Query Demo 3](assets/query3.gif)
-- Clean UI with dark mode
-- Public URL
 
 ---
 
